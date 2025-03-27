@@ -302,14 +302,14 @@ section{
     place-content: center;
     place-items: center;
     grid-template-columns: repeat(3, 185px);
-    gap: 20px 75px;
+    gap: 30px 75px;
     padding-left: 32vw;
 }
 
 .card {
     border-radius: 20px;
     width: 180px;
-    height: 260px;
+    height: 250px;
     perspective: 1000px; 
     transition: transform 0.6s ease-in-out; 
 }
@@ -409,7 +409,7 @@ section{
     justify-self: center;
     align-self: center;
     text-align: center;
-    padding: 8px;
+    padding: 5px;
     font-size: 12px;
     font-weight: 500;
     border-bottom: 2px solid #373737;
