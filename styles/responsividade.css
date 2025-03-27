@@ -1,0 +1,199 @@
+:root {
+    --primary-color: #9e4301;
+    --secundary-color: #331805;
+    --highlighted-font: "Press Start 2P", system-ui;
+    --main-font: "Raleway", sans-serif;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 950px) {
+    *{ scroll-padding: 30px;}
+    .interface{ flex-direction: column; }
+
+    header{
+        flex-direction: row;
+        padding: 1% 5% 0;
+        position: fixed;
+        width: 100%;
+       }
+       .container-logo{
+            display: flex;
+            justify-content: start;
+            flex: 80%;
+            width: 100%;
+       }
+       .container-logo img{
+            margin-left: 0;
+            width: auto;
+            max-height: 55px;
+            object-fit: contain;
+       }
+       .nav-list{
+            flex: 20%;
+            position: relative;
+            display: flex;
+            align-self: center;
+            text-align: right;
+       }
+       .btn-menu{
+            display: flex;
+            align-items: end;
+            justify-content: end;
+            width: 100%;
+       }
+       .abrir-menu{ display: flex;}
+
+       .nav-items{
+            opacity: 0;
+            flex-direction: column;
+            font-family: var(--highlighted-font);
+            list-style-type: none;
+            text-align: left;
+            position: absolute;
+            top: 115%;
+            right: -30%;
+            height: 100vh;
+            backdrop-filter: blur(5px);
+            transition: all .3s ease-in-out;
+            clip-path: circle(10px at 90% -15%);
+            z-index: 100;
+       }
+    
+       .nav-items.active{
+            opacity: 1;
+            clip-path: circle(1500px at 90% -15%);
+       }
+       .nav-items li{ padding: 10px 50px; }
+
+       .nav-items li a{
+            display: block;
+            color: var(--secundary-color);
+            text-decoration: none;
+            padding: 16px 5%;
+            font-size: 12px;
+            text-indent: 20px;
+            transition: all .3s ease-in-out;
+       }
+       .nav-items li a::before{
+            display: none;
+            content: "*";
+            padding-right: 5%;
+       }
+       .nav-items li a:hover::before{ display: inline; }
+       
+       .links-sociais-menu{
+        display: flex;
+        justify-content: flex-end;
+        text-decoration: none;
+        padding: 2px;
+        padding-right: 10%;
+        gap: 5px;
+        cursor: pointer;
+        padding-right: 5%;   
+    }
+    .links-sociais-menu ion-icon{
+        font-size: 43px;
+        padding: 10px;
+        color: var(--secundary-color);
+        transition: all .3s ease-in-out;
+    }
+    .links-sociais-menu ion-icon:hover{
+        transform: scale(110%);
+        color: var(--primary-color);
+    }
+
+    /* Seção do Aventureiro */
+    .section-aventureiro{ padding-top: 7%; }
+    .img-perfil, .status-perfil{ margin: 0;}
+
+    .status-perfil h1, h3{ 
+        font-size: 13px; 
+        line-height: 15px; 
+    }
+    .status-perfil h2{ 
+        font-size: 11px; 
+        padding-bottom: 0;
+        line-height: 15px;
+    }
+    
+    .status-perfil h2::after{ content: '---------' ; padding-bottom: 10px;}
+
+    .status-perfil h3 span, #texto-perfil { 
+        font-size: 16px; 
+        padding-bottom: 10px;
+    }
+
+    .links-sociais-status{ display: none; }
+
+    #texto-perfil{ 
+        padding-top: 10px;
+        padding-left: 0; 
+        text-align: justify; 
+    }
+
+    /* Seção das Habilidades e Seção das Realizações */
+    .section-habilidades, .section-realizacoes{
+        padding-left: 5%;
+    }
+
+    .section-realizacoes{ padding-top: 5%;}
+}
+
+@media screen and (max-width: 500px){
+    .container-logo { padding-bottom: 0;}
+    .abrir-menu{ font-size: 10vw; }
+
+    /* Seção do Aventureiro */
+    .section-aventureiro{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding-top: 17%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .img-perfil img { height: 30vh; }
+    .status-perfil{ padding-left: 0; padding: 15px;}
+    
+    .status-perfil h1{ 
+        font-size: 14px; 
+        line-height: 10px; 
+    }
+    
+    .status-perfil h2{ font-size: 12px; }
+    .status-perfil h3{ font-size: 14px;}
+    
+    .status-perfil h2::after{ 
+        content: '-------------------'; 
+        margin-bottom: 15px;
+    }
+    .status-perfil h3 span, #texto-perfil { 
+        font-size: 17px; 
+        line-height: 18px; 
+    }
+
+    /* Seção das Habilidades */
+    .section-habilidades{ 
+        display: flex;
+        flex-direction: column-reverse; 
+        padding: 5vh 5%;
+        min-height: 100vh;
+        height: auto;
+    }
+    .btn-conteudo{ flex: 60%; }
+    .btn-conteudo img { width: 38px; }
+    .btn-conteudo p { font-size: 10px; }
+    #conteudoHabilidades{ padding-left: 0; padding-top: 15px; font-size: 15px; flex: 40%;}
+    #conteudoHabilidades h2{ font-size: 13px; }
+
+    /* Seção das Realizações */
+
+    .section-realizacoes{
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 5%;
+    }
+}

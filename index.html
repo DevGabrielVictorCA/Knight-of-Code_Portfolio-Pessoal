@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsividade.css">
+    <title>Portfólio</title>
+</head>
+<body>
+    <div class="interface">
+        <header>
+            <!-- Logotipo -->
+             <div class="container-logo">
+                 <img src="Imagens/logo.png" alt="logo Knight of Code">
+             </div>
+
+            <!-- Menu -->
+            <nav class="nav-list">
+                <div class="btn-menu">
+                    <div class="abrir-menu"><ion-icon name="menu-outline"></ion-icon></div>
+                </div>
+                <ul class="nav-items">
+                    <li><a href="#aventureiro">Aventureiro</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#realizacoes">Realizações</a></li>
+                    <li><a href="">Conquistas</a></li>
+                    <li><a href="">Diário</a></li>
+
+                    <div class="links-sociais-menu">
+                        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        <a href="https://github.com/DevGabrielVictorCA"><ion-icon name="logo-github"></ion-icon></a>
+                    </div>
+                </ul>  
+            </nav>
+        </header>
+    
+        <main>
+
+            <!-- Seção do Aventureiro -->
+            <section class="section-aventureiro" id="aventureiro">
+                <article class="img-perfil">
+                    <img src="Imagens/perfil.png" alt="imagem de Perfil">
+                </article>
+
+                <article class="status-perfil">
+                    <h1>Gabriel Cardoso</h1>
+                    <h2>O Artesão da Interface</h2>
+                    <h3> Classe:<span> Dev Front-End.</span></h3>
+                    <h3> Status:<span> Em uma jornada para criar projetos incriveis.</span></h3>
+                    
+                   <div class="links-sociais-status">
+                        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                    </div>
+                </article>
+
+                <article id="texto-perfil">
+                    <p>Um aventureiro destemido no vasto mundo da programação! Estudante de Análise e Desenvolvimento de Sistemas, descobriu os segredos do código no ensino médio e assim deu início à sua longa jornada.</p>
+                </article>
+            </section>
+
+            <!-- Seção das Habilidades -->
+            <section class="section-habilidades" id="habilidades">
+                <div class="habilidades-btn">
+                    <article class="btn-conteudo" 
+                        data-conteudo='<h2> HTML5 - Level 8 </h2> HTML é como o esqueleto de uma página da web. Ele define os elementos principais, como textos, imagens, botões e links. Com o HTML5, podemos criar sites modernos e acessíveis, incluindo vídeos, formulários e animações sem necessidade de plugins extras.'>
+                        <div class="habilidades-img">
+                            <img src="Imagens/html.png" alt="logo HTML5">
+                        </div>
+                        <p>HTML5</p>
+                    </article>
+                    <article class="btn-conteudo" 
+                        data-conteudo='<h2> CSS - Level 7</h2> CSS é responsável pelo visual da página. Ele permite alterar cores, fontes, tamanhos, espaçamentos e organizar os elementos na tela. O CSS3 trouxe novos recursos como animações, efeitos de sombra e responsividade (sites que se adaptam a celulares e computadores).'>
+                        <div class="habilidades-img">
+                            <img src="Imagens/css.png" alt="logo CSS3">
+                        </div>
+                        <p>CSS3</p>
+                    </article>
+                    <article class="btn-conteudo" 
+                        data-conteudo='<h2> JavaScript - Level 5</h2> JavaScript é uma linguagem que faz um site ser dinâmico. Com ele, podemos criar botões que criam cliques, formulários que validam informações e até jogos e animações. Ele funciona dentro dos navegadores e também pode ser usado no desenvolvimento de servidores e aplicativos.'>
+                        <div class="habilidades-img">
+                            <img src="Imagens/js.png" alt="logo JavaScript">
+                        </div>
+                        <p>JavaScript</p>
+                    </article>
+                    <article class="btn-conteudo" 
+                        data-conteudo='<h2> Tailwind CSS - Level 3</h2> Tailwind é uma ferramenta que já vem com classes prontas para estilizar elementos sem precisar escrever muito código. Em vez de criar arquivos CSS personalizados, você aplica estilos diretamente no código HTML, deixando o processo mais rápido e organizado.'>
+                        <div class="habilidades-img">
+                            <img src="Imagens/tailwind.png" alt="logo Tailwind CSS">
+                        </div>
+                        <p>Tailwind CSS</p>
+                    </article>
+                    <article class="btn-conteudo" 
+                        data-conteudo='<h2> Lógica de Programação - Level 6</h2> Lógica de programação é o raciocínio necessário para criar códigos eficientes. Isso inclui entender como usar variáveis ​​(para guardar dados), condições (para tomar decisões), loops (para repetir ações) e funções (para organizar o código). Quem entende bem lógica de programação consegue aprender qualquer linguagem com mais facilidade.'>
+                        <div class="habilidades-img">
+                            <img src="Imagens/logica.png" alt="logo Lógica de Programação">
+                        </div>
+                        <p>Log. de Programação</p>
+                    </article>
+                    <article class="btn-conteudo" 
+                        data-conteudo='<h2> Figma - Level 5</h2> Figma é uma ferramenta usada para criar protótipos de sites e aplicativos. Ele permite desenhar uma interface, escolher núcleos e organizar os elementos antes de começar a programar. É muito usado por designers e desenvolvedores para planejar projetos visuais.'>
+                        <div class="habilidades-img">
+                            <img src="Imagens/figma.png" alt="logo Figma">
+                        </div>
+                        <p>Figma</p>
+                    </article>
+                    <article class="btn-conteudo" 
+                        data-conteudo='<h2> Inglês - Level Básico 2</h2>O inglês é a língua padrão da programação. A maioria dos tutoriais, documentações e fóruns de ajuda está em inglês. Quem entende bem a língua consegue aprender mais rápido, encontrar soluções para problemas e se comunicar com profissionais do mundo todo.'>
+                        <div class="habilidades-img">
+                            <img src="Imagens/ingles.png" alt="logo Inglês">
+                        </div>
+                        <p>Inglês</p>
+                    </article>
+                    <article class="btn-conteudo" 
+                        data-conteudo='<h2> Documentação de Softaware - Level 6</h2> A documentação registra como um software funciona. Ela pode incluir instruções de uso, explicações sobre o código, requisitos do sistema e guias para outros programadores. Manter uma documentação clara e organizada facilita atualizações e manutenção no futuro.'>
+                        <div class="habilidades-img">
+                            <img src="Imagens/documentos.png" alt="logo documentação de Software">
+                        </div>
+                        <p>Doc. de Software</p>
+                    </div>
+                </article>
+                <p id="conteudoHabilidades">/* Passe o mouse sobre um ícone para ver a sua descrição. */</p>
+            </section>
+
+            <!-- Seção das Realizações -->
+            <section class="section-realizacoes" id="realizacoes">
+
+                <!-- Projeto MercadoVerde -->
+                <article class="card">
+                    <div class="card-flip">
+                        <div class="card-front">
+                            <div class="title-card">
+                                <h2>MercadoVerde</h2>
+                                <p>01</p>
+                            </div>
+                            <div class="img-card">
+                                <img src="Imagens/pergaminho3.jpg" alt="projeto1">
+                            </div>
+                            <div class="text-card">
+                                <p>Software E-commerce de mercado fictício</p>
+                                <hr>
+                                <div class="tags">
+                                    <img src="Imagens/html.png" alt="Feito com HTML5" title="HTML5">
+                                    <img src="Imagens/css.png" alt="Feito com CSS3" title="CSS3">
+                                    <img src="Imagens/js.png" alt="Feito com JavaScript" title="JavaScript">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="text-card">
+                                <div class="img-card">
+                                    <img src="Imagens/pergaminho3.jpg" alt="projeto1">
+                                </div>
+                                <p>Facilita a busca por produtos frescos e orgânicos em supermercados relacionados, atendendo à demanda por uma alimentação saudável. Com compra programada e entregas agendadas, economiza tempo e traz mais conveniência ao dia a dia.</p>
+                                <hr>
+                                <div class="links-view">
+                                    <a href="#"><ion-icon name="logo-github" alt="Veja o repositório no GitHub" title="Veja o repositório no GitHub"></ion-icon>GitHub</a>
+                                    <a href="#"><ion-icon name="eye-outline" alt="Visite o conteúdo web" title="Visite o conteúdo web"></ion-icon> Visualizar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projeto Ubatuba Vans -->
+                <article class="card">
+                    <div class="card-flip">
+                        <div class="card-front">
+                            <div class="title-card">
+                                <h2>MercadoVerde</h2>
+                                <p>01</p>
+                            </div>
+                            <div class="img-card">
+                                <img src="Imagens/pergaminho3.jpg" alt="projeto1">
+                            </div>
+                            <div class="text-card">
+                                <p>Software E-commerce de mercado fictício</p>
+                                <hr>
+                                <div class="tags">
+                                    <img src="Imagens/html.png" alt="Feito com HTML5" title="HTML5">
+                                    <img src="Imagens/css.png" alt="Feito com CSS3" title="CSS3">
+                                    <img src="Imagens/js.png" alt="Feito com JavaScript" title="JavaScript">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="text-card">
+                                <div class="img-card">
+                                    <img src="Imagens/pergaminho3.jpg" alt="projeto1">
+                                </div>
+                                <p>Facilita a busca por produtos frescos e orgânicos em supermercados relacionados, atendendo à demanda por uma alimentação saudável. Com compra programada e entregas agendadas, economiza tempo e traz mais conveniência ao dia a dia.</p>
+                                <hr>
+                                <div class="links-view">
+                                    <a href="#"><ion-icon name="logo-github" alt="Veja o repositório no GitHub" title="Veja o repositório no GitHub"></ion-icon>GitHub</a>
+                                    <a href="#"><ion-icon name="eye-outline" alt="Visite o conteúdo web" title="Visite o conteúdo web"></ion-icon> Visualizar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projeto MercadoVerde -->
+                <article class="card">
+                    <div class="card-flip">
+                        <div class="card-front">
+                            <div class="title-card">
+                                <h2>MercadoVerde</h2>
+                                <p>01</p>
+                            </div>
+                            <div class="img-card">
+                                <img src="Imagens/pergaminho3.jpg" alt="projeto1">
+                            </div>
+                            <div class="text-card">
+                                <p>Software E-commerce de mercado fictício</p>
+                                <hr>
+                                <div class="tags">
+                                    <img src="Imagens/html.png" alt="Feito com HTML5" title="HTML5">
+                                    <img src="Imagens/css.png" alt="Feito com CSS3" title="CSS3">
+                                    <img src="Imagens/js.png" alt="Feito com JavaScript" title="JavaScript">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="text-card">
+                                <div class="img-card">
+                                    <img src="Imagens/pergaminho3.jpg" alt="projeto1">
+                                </div>
+                                <p>Facilita a busca por produtos frescos e orgânicos em supermercados relacionados, atendendo à demanda por uma alimentação saudável. Com compra programada e entregas agendadas, economiza tempo e traz mais conveniência ao dia a dia.</p>
+                                <hr>
+                                <div class="links-view">
+                                    <a href="#"><ion-icon name="logo-github" alt="Veja o repositório no GitHub" title="Veja o repositório no GitHub"></ion-icon>GitHub</a>
+                                    <a href="#"><ion-icon name="eye-outline" alt="Visite o conteúdo web" title="Visite o conteúdo web"></ion-icon> Visualizar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projeto Ubatuba Vans -->
+                <article class="card">
+                    <div class="card-flip">
+                        <div class="card-front">
+                            <div class="title-card">
+                                <h2>MercadoVerde</h2>
+                                <p>01</p>
+                            </div>
+                            <div class="img-card">
+                                <img src="Imagens/pergaminho3.jpg" alt="projeto1">
+                            </div>
+                            <div class="text-card">
+                                <p>Software E-commerce de mercado fictício</p>
+                                <hr>
+                                <div class="tags">
+                                    <img src="Imagens/html.png" alt="Feito com HTML5" title="HTML5">
+                                    <img src="Imagens/css.png" alt="Feito com CSS3" title="CSS3">
+                                    <img src="Imagens/js.png" alt="Feito com JavaScript" title="JavaScript">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="text-card">
+                                <div class="img-card">
+                                    <img src="Imagens/pergaminho3.jpg" alt="projeto1">
+                                </div>
+                                <p>Facilita a busca por produtos frescos e orgânicos em supermercados relacionados, atendendo à demanda por uma alimentação saudável. Com compra programada e entregas agendadas, economiza tempo e traz mais conveniência ao dia a dia.</p>
+                                <hr>
+                                <div class="links-view">
+                                    <a href="#"><ion-icon name="logo-github" alt="Veja o repositório no GitHub" title="Veja o repositório no GitHub"></ion-icon>GitHub</a>
+                                    <a href="#"><ion-icon name="eye-outline" alt="Visite o conteúdo web" title="Visite o conteúdo web"></ion-icon> Visualizar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projeto MercadoVerde -->
+                <article class="card">
+                    <div class="card-flip">
+                        <div class="card-front">
+                            <div class="title-card">
+                                <h2>MercadoVerde</h2>
+                                <p>01</p>
+                            </div>
+                            <div class="img-card">
+                                <img src="Imagens/pergaminho3.jpg" alt="projeto1">
+                            </div>
+                            <div class="text-card">
+                                <p>Software E-commerce de mercado fictício</p>
+                                <hr>
+                                <div class="tags">
+                                    <img src="Imagens/html.png" alt="Feito com HTML5" title="HTML5">
+                                    <img src="Imagens/css.png" alt="Feito com CSS3" title="CSS3">
+                                    <img src="Imagens/js.png" alt="Feito com JavaScript" title="JavaScript">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="text-card">
+                                <div class="img-card">
+                                    <img src="Imagens/pergaminho3.jpg" alt="projeto1">
+                                </div>
+                                <p>Facilita a busca por produtos frescos e orgânicos em supermercados relacionados, atendendo à demanda por uma alimentação saudável. Com compra programada e entregas agendadas, economiza tempo e traz mais conveniência ao dia a dia.</p>
+                                <hr>
+                                <div class="links-view">
+                                    <a href="#"><ion-icon name="logo-github" alt="Veja o repositório no GitHub" title="Veja o repositório no GitHub"></ion-icon>GitHub</a>
+                                    <a href="#"><ion-icon name="eye-outline" alt="Visite o conteúdo web" title="Visite o conteúdo web"></ion-icon> Visualizar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projeto Ubatuba Vans -->
+                <article class="card">
+                    <div class="card-flip">
+                        <div class="card-front">
+                            <div class="title-card">
+                                <h2>MercadoVerde</h2>
+                                <p>01</p>
+                            </div>
+                            <div class="img-card">
+                                <img src="Imagens/pergaminho3.jpg" alt="projeto1">
+                            </div>
+                            <div class="text-card">
+                                <p>Software E-commerce de mercado fictício</p>
+                                <hr>
+                                <div class="tags">
+                                    <img src="Imagens/html.png" alt="Feito com HTML5" title="HTML5">
+                                    <img src="Imagens/css.png" alt="Feito com CSS3" title="CSS3">
+                                    <img src="Imagens/js.png" alt="Feito com JavaScript" title="JavaScript">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="text-card">
+                                <div class="img-card">
+                                    <img src="Imagens/pergaminho3.jpg" alt="projeto1">
+                                </div>
+                                <p>Facilita a busca por produtos frescos e orgânicos em supermercados relacionados, atendendo à demanda por uma alimentação saudável. Com compra programada e entregas agendadas, economiza tempo e traz mais conveniência ao dia a dia.</p>
+                                <hr>
+                                <div class="links-view">
+                                    <a href="#"><ion-icon name="logo-github" alt="Veja o repositório no GitHub" title="Veja o repositório no GitHub"></ion-icon>GitHub</a>
+                                    <a href="#"><ion-icon name="eye-outline" alt="Visite o conteúdo web" title="Visite o conteúdo web"></ion-icon> Visualizar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                
+            </section>
+        </main>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
