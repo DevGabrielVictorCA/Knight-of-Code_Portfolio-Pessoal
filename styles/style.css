@@ -469,7 +469,7 @@ section{
 /* ---------------------------- Seção do Diário ---------------------------- */
 .section-diario{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     width: 100vw;
@@ -479,8 +479,9 @@ section{
 
 #line{
     width: 90%;
-    height: 2px;
-    background-color: black;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #C2A03D;
     position: relative;
 }
 
@@ -497,9 +498,9 @@ section{
 
 .line-items li{
     position: relative;
-    background-color: red;
-    width: 30px;
-    height: 30px;
+    background-color: var(--primary-color);
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
 }
 
@@ -508,35 +509,32 @@ section{
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: 2px solid black;
+    border: 4px solid #C2A03D;
+    color: white;
+    font-family: var(--highlighted-font);
+    font-size: 9.5px;
     background-color: inherit;
     transition: all .3s ease-in-out;
+    text-align: center;
+    line-height: 30px;
     z-index: 100;
 }
 
-.line-items li:hover span{
-    background-color: blue;
-    transform: scale(1.3);
-}
-
-.line-items li .top,
-.line-items li .bottom { 
-    position: relative; 
-}
-
-li .item .top { top: -65px; }
-li .item .bottom { top: 65px; }
+.line-items li:hover span{ transform: scale(1.3); }
+.top, .bottom{ position: relative; }
+.top { top: -65px; }
+.bottom { top: 65px; }
 
 .top::after,
 .bottom::after {
     content: '';
     position: absolute;
-    width: 2px;
-    height: 170%;
-    background-color: black;
+    width: 4px;
+    height: 130%;
+    background-color: #C2A03D;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .top::after { top: 30px; }
-.bottom::after { top: -50px; }
+.bottom::after { top: -45px; }

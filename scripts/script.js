@@ -25,3 +25,13 @@ const observer = new MutationObserver(() => {
     sectionHabilidades.scrollIntoView({ behavior: "smooth", block: "start" });
 });
 observer.observe(conteudoHabilidades, { childList: true, subtree: true });
+
+// Exibir informações da linha do tempo.
+let time = document.querySelectorAll('.item');
+let timeContent = document.getElementById('time-content'); // Agora seleciona apenas um elemento
+
+time.forEach(timeBtn => {
+    timeBtn.addEventListener('click', () => {
+        timeContent.innerHTML = timeBtn.querySelector('span').dataset.time; // Pegando o dataset do span dentro do li
+    });
+});
