@@ -6,7 +6,6 @@
 }
 
 /* Responsividade */
-
 @media screen and (max-width: 950px) {
     *{ scroll-padding: 30px;}
     .interface{ flex-direction: column; }
@@ -132,10 +131,16 @@
         text-align: justify; 
     }
 
-    /* Seção das Habilidades e Seção das Realizações */
-    .section-habilidades, .section-realizacoes{
+    /* Seção das Habilidades, Seção das Realizações e Seção do Diário*/
+    .section-habilidades, .section-realizacoes, .section-diario{
         padding-left: 5%;
     }
+
+    /* Seção do Diário */
+    .section-diario{
+        height: 150vh;
+    }
+
 
     .section-realizacoes{ padding-top: 5%;}
 }

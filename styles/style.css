@@ -474,21 +474,39 @@ section{
     flex-direction: column;
     width: 100vw;
     height: 100vh;
+    padding: 80px 5%;
+    border: 4px solid red;
     padding-left: 32vw;
 }
 
 
 #time-title{
+    flex: 15%;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-wrap: wrap;
     border: 1px solid red;
 }
 
+.timeline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid green;
+    flex: 35%;
+}
 .line{
     width: 90%;
     height: 4px;
     border-radius: 10px;
     background-color: #C2A03D;
     position: relative;
-    border: 1px solid green;
 }
 
 .line-items{
@@ -546,7 +564,9 @@ section{
 .bottom::after { top: -45px; }
 
 #time-content{
+    flex: 50%;
     border: 1px solid blue;
+    padding-top: 10px;
 }
 #time-content h2{
     color: var(--primary-color);
