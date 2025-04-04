@@ -31,6 +31,7 @@ O website tem como principal finalidade:
 - **Informações claras e objetivas:** Apresentar dados pessoais e profissionais de forma direta e organizada. 
 
 - **Seções dedicadas:**
+
 | Seção          | Descrição                                  |  
 |----------------|-------------------------------------------|  
 | **Aventureiro** | Bio, formação e trajetória.               |  
