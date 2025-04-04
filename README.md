@@ -34,10 +34,10 @@ O website tem como principal finalidade:
 
 | Seção          | Descrição                                  |  
 |----------------|-------------------------------------------|  
-| **Aventureiro** | Bio, formação e trajetória.               |  
+| **Aventureiro** | Bio, formação e breve trajetória.               |  
 | **Habilidades** | Linguagens, frameworks e ferramentas.     |  
 | **Realizações** | Projetos com links e detalhes.            |  
-| **Diário**     | Timeline com a trajetória do desenvolvedor    |  
+| **Diário**     | Timeline com a trajetória completa do desenvolvedor    |  
 
 - **Links de contato:** Incluir redirecionamento para **GitHub, LinkedIn** para meios de comunicação.  
 
