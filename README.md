@@ -77,3 +77,4 @@ O **"Knight of Code"** será um portfólio único, combinando profissionalismo c
 git clone https://github.com/DevGabrielVictorCA/Portfolio.git
 cd Portfolio
 open index.html  # ou start/index.html dependendo do seu OS
+```
