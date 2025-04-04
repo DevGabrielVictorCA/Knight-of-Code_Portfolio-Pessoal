@@ -67,7 +67,7 @@ O **"Knight of Code"** será um portfólio único, combinando profissionalismo c
 ---
 
 ## 🔗 Acesso  
-- **Site Online:** [Knight of Code](https://devgabrielvictorca.github.io/Portfolio/)  
+- **Site Online:** [Knight of Code](https://devgabrielvictorca.github.io/Knight-of-Code_Portfolio-Pessoal/)  
 - **Repositório:** [GitHub](https://github.com/DevGabrielVictorCA/Portfolio)  
 
 ---
