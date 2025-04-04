@@ -145,7 +145,7 @@
     .section-realizacoes{ padding-top: 5%;}
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 630px){
     .container-logo { padding-bottom: 0;}
     .abrir-menu{ font-size: 10vw; }
 
