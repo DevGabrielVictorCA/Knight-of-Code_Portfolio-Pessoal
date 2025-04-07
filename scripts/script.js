@@ -28,10 +28,26 @@ observer.observe(conteudoHabilidades, { childList: true, subtree: true });
 
 // Exibir informações da linha do tempo.
 let time = document.querySelectorAll('.item');
-let timeContent = document.getElementById('time-content'); // Agora seleciona apenas um elemento
+let timeContent = document.getElementById('time-content');
 
 time.forEach(timeBtn => {
     timeBtn.addEventListener('click', () => {
-        timeContent.innerHTML = timeBtn.querySelector('span').dataset.time; // Pegando o dataset do span dentro do li
+        timeContent.innerHTML = timeBtn.querySelector('span').dataset.time; 
     });
+});
+
+// Botão voltar ao topo da página.
+const interface = document.querySelector('.interface');
+const sectionAventureiro = document.querySelector('#aventureiro');
+const botao = document.querySelector('.voltar-topo');
+
+interface.addEventListener('scroll', () => {
+    const rolagemY = interface.scrollTop;
+    const distaciaTopo = sectionAventureiro.offsetTop;
+
+    if (rolagemY > distaciaTopo) {
+        botao.classList.add('ativo');
+    } else {
+        botao.classList.remove('ativo');
+    }
 });

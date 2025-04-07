@@ -131,15 +131,17 @@
         text-align: justify; 
     }
 
+    .voltar-topo{ right: 10px; }
+
     /* Seção das Habilidades, Seção das Realizações e Seção do Diário*/
     .section-habilidades, .section-realizacoes, .section-diario{
         padding-left: 5%;
     }
 
     /* Seção do Diário */
-    .section-diario{
+    /* .section-diario{
         height: 150vh;
-    }
+    } */
 
 
     .section-realizacoes{ padding-top: 5%;}

@@ -16,13 +16,11 @@ body {
     font-family: var(--main-font);
     color: var(--secundary-color);
     width: 100vw;
-    height: 100vh;
+    overflow-x: hidden;
 }
 
 /* Interface de Interação*/
 .interface {
-    display: flex;
-    width: 100%;
     height: 100vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
@@ -154,7 +152,7 @@ header::before,
 section{
     background: url(../Imagens/pergaminho3.jpg) no-repeat center / cover;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     padding: 3% 5%;
     scroll-snap-align: start;
 }
@@ -292,6 +290,27 @@ section{
     font-family: var(--highlighted-font);
     font-size: 15px;
     padding-bottom: 30px;
+}
+
+.voltar-topo{
+    opacity: 0;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    font-size: 40px;
+    color: var(--secundary-color);
+    transition: all .3s ease-in-out;
+    pointer-events: none;
+}
+
+.voltar-topo.ativo{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.voltar-topo:hover{
+    color: var(--primary-color);
+    transform: scale(110%);
 }
 
 /* ---------------------------- Seção das Realizações ---------------------------- */
@@ -473,10 +492,9 @@ section{
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: 115vh;
-    border: 4px solid red;
+    height: 100vh;
     padding-left: 32vw;
-    padding-top: 90px;
+    /* padding-top: 90px; */
 }
 
 
@@ -489,7 +507,6 @@ section{
     align-items: center;
     text-align: center;
     text-wrap: wrap;
-    border: 1px solid red;
 }
 
 .timeline{
@@ -498,7 +515,6 @@ section{
     align-items: center;
     width: 100%;
     height: 100%;
-    border: 1px solid green;
     flex: 35%;
 }
 .line{
@@ -565,7 +581,6 @@ section{
 
 #time-content{
     flex: 50%;
-    border: 1px solid blue;
     padding-top: 10px;
 }
 #time-content h2{
