@@ -6,6 +6,15 @@ abrirMenu.addEventListener('click', ()=>{
     navItems.classList.toggle('active');
 })
 
+// Itens ativos no menu
+const navLinks = document.querySelectorAll(".nav-link");
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.forEach(item => item.classList.remove("ativo"));
+        link.classList.add("ativo");
+    })
+})
+
 // Mostrar e esconder descrição das habilidades.
 let btnConteudo = document.querySelectorAll('.btn-conteudo');
 let conteudoHabilidades = document.getElementById('conteudoHabilidades');
@@ -50,4 +59,25 @@ interface.addEventListener('scroll', () => {
     } else {
         botao.classList.remove('ativo');
     }
+});
+
+// Efeito Scrollspy de rolagem no menu de navegação.
+const sections = document.querySelectorAll('section');
+const linksMenu = document.querySelectorAll('.nav-link');
+
+interface.addEventListener('scroll', () => {
+    let scrollY = interface.scrollTop;
+
+    sections.forEach(section => {
+        let sectionTop = section.offsetTop;
+        let sectionHeight = section.offsetHeight;
+        let sectionId = section.getAttribute('id');
+
+        if (scrollY >= sectionTop - 150 && scrollY < sectionTop + sectionHeight - 150) {
+            linksMenu.forEach(link => link.classList.remove('ativo'));
+
+            const activeLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
+            if (activeLink) activeLink.classList.add('ativo');
+        }
+    });
 });

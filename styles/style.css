@@ -91,6 +91,11 @@ header::before,
     transition: all .3s ease-in-out;
 }
 
+.nav-items li a.ativo{
+    transform: scale(110%);
+    color: var(--primary-color);
+}
+
 .nav-items li a:hover{
     transform: scale(110%);
     color: var(--primary-color);
@@ -101,7 +106,7 @@ header::before,
     content: "*";
     padding-right: 5%;
 }
-.nav-items li a:hover::before{ display: inline; }
+.nav-items li a:hover::before, .nav-items li a.ativo::before{ display: inline; }
 
 .nav-items .links-sociais{
     display: none;
