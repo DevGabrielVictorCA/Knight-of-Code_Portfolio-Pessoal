@@ -499,7 +499,6 @@ section{
     width: 100vw;
     height: 100vh;
     padding-left: 32vw;
-    /* padding-top: 90px; */
 }
 
 
@@ -563,12 +562,19 @@ section{
     text-align: center;
     line-height: 30px;
     z-index: 100;
+    cursor: pointer;
 }
 
-.line-items li:hover span{ transform: scale(1.3); }
+.line-items li:hover span { transform: scale(1.3); }
+.line-items li.time-ativo span { transform: scale(1.4); }
+.line-items li.time-ativo:hover span { transform: scale(1.4); /* evita crescer ainda mais */ }
+
 .top, .bottom{ position: relative; }
+
 .top { top: -65px; }
 .bottom { top: 65px; }
+
+/* .ativo.top::after{ top: 17px;} */
 
 .top::after,
 .bottom::after {

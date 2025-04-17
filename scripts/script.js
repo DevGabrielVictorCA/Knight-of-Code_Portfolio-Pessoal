@@ -35,16 +35,6 @@ const observer = new MutationObserver(() => {
 });
 observer.observe(conteudoHabilidades, { childList: true, subtree: true });
 
-// Exibir informações da linha do tempo.
-let time = document.querySelectorAll('.item');
-let timeContent = document.getElementById('time-content');
-
-time.forEach(timeBtn => {
-    timeBtn.addEventListener('click', () => {
-        timeContent.innerHTML = timeBtn.querySelector('span').dataset.time; 
-    });
-});
-
 // Botão voltar ao topo da página.
 const interface = document.querySelector('.interface');
 const sectionAventureiro = document.querySelector('#aventureiro');
@@ -62,22 +52,40 @@ interface.addEventListener('scroll', () => {
 });
 
 // Efeito Scrollspy de rolagem no menu de navegação.
+interface;
 const sections = document.querySelectorAll('section');
 const linksMenu = document.querySelectorAll('.nav-link');
 
 interface.addEventListener('scroll', () => {
-    let scrollY = interface.scrollTop;
+    let rolagemY = interface.scrollTop;
 
     sections.forEach(section => {
-        let sectionTop = section.offsetTop;
-        let sectionHeight = section.offsetHeight;
+        let sectionTop = section.offsetTop; // Distância do topo da seção em relação ao topo da página.
+        let sectionAltura = section.offsetHeight; // Altura da seção.
         let sectionId = section.getAttribute('id');
 
-        if (scrollY >= sectionTop - 150 && scrollY < sectionTop + sectionHeight - 150) {
+        if (rolagemY >= sectionTop - 150 && rolagemY < sectionTop + sectionAltura - 150) {
             linksMenu.forEach(link => link.classList.remove('ativo'));
 
             const activeLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
             if (activeLink) activeLink.classList.add('ativo');
         }
+    });
+});
+
+// Exibir informações da linha do tempo.
+let time = document.querySelectorAll('.item');
+let timeContent = document.getElementById('time-content');
+let itemAtivo = document.querySelector('.item.time-ativo');
+
+if (itemAtivo){ 
+    timeContent.innerHTML = itemAtivo.querySelector('span').dataset.time;
+}
+
+time.forEach(timeBtn => {
+    timeBtn.addEventListener('click', () => {
+        time.forEach(item => item.classList.remove('time-ativo'));
+        timeBtn.classList.add('time-ativo');
+        timeContent.innerHTML = timeBtn.querySelector('span').dataset.time; 
     });
 });
