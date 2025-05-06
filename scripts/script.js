@@ -73,6 +73,18 @@ interface.addEventListener('scroll', () => {
     });
 });
 
+// Carrossel de imagens na seção de realizações.
+const imagens = document.querySelectorAll('.imagem');
+let indexAtual = 0;
+
+function mostrarImagem() {
+  imagens.forEach(img => img.classList.remove('visivel')); 
+  imagens[indexAtual].classList.add('visivel');
+  indexAtual = (indexAtual + 1) % imagens.length;
+}
+
+setInterval(mostrarImagem, 3000); 
+
 // Exibir informações da linha do tempo.
 let time = document.querySelectorAll('.item');
 let timeContent = document.getElementById('time-content');

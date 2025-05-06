@@ -420,6 +420,47 @@ section{
     border-top: 1px solid #ffffff;
 }
 
+.carrossel {
+    width: 500px; 
+    margin: 0 auto;
+}
+
+.area-carrossel{
+    position: relative;
+    width: 100%;
+    height: 105px;
+    overflow: hidden;
+}
+
+.imagem {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease-in-out;
+}
+
+.imagem img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 105px;
+    padding: 3%;
+}
+
+.imagem img:hover{
+    transform: scale(115%);
+    transition: all .3s ease-in-out;
+}
+
+.imagem.visivel {
+    opacity: 1;
+    visibility: visible;
+}
+
 .text-card{
     display: flex;
     justify-content: center;
