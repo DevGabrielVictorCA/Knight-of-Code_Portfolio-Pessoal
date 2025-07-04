@@ -224,7 +224,7 @@
     }
 
     .card-front .text-card p{ font-size: 15px;}
-    .card-back .text-card p, .links-view a{ font-size: 11px; }
+    .links-view a{ font-size: 10px; }
     .img-card img{
         height: 130px;
     }
