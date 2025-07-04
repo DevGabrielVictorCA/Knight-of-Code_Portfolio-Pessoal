@@ -138,11 +138,9 @@
         padding-left: 5%;
     }
 
-    /* Seção do Diário */
-    /* .section-diario{
-        height: 150vh;
-    } */
-
+    .card-back .text-card p{
+        font-size: 10px;
+    }
 
     .section-realizacoes{ padding-top: 5%;}
 }
@@ -213,22 +211,18 @@
     .card{ 
         width: 216px;
         height: 300px;
-        /* margin: 0 auto; */
+        margin: 0 auto;
     }
     .card.vazio{ display: none; }
 
     .title-card h2, .title-card p{
-        font-size: 11px;
         line-height: 15px;
         text-align: center;
     }
 
     .card-front .text-card p{ font-size: 15px;}
-    .links-view a{ font-size: 7px; }
-    .img-card img{
-        height: 130px;
-    }
-
+    .card-back .text-card p, .links-view a{ font-size: 10px; }
+    .img-card img{ height: 130px}
     .tags img{ width: 32px; }
 
     .links-view a ion-icon{
