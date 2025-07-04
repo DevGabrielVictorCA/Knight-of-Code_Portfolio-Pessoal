@@ -136,6 +136,8 @@
     /* Seção das Habilidades, Seção das Realizações e Seção do Diário*/
     .section-habilidades, .section-realizacoes, .section-diario{
         padding-left: 5%;
+        height: auto;
+        min-height: 100vh;
     }
 
     .section-realizacoes{ padding-top: 5%;}
@@ -180,17 +182,23 @@
         display: flex;
         flex-direction: column-reverse; 
         padding: 5vh 5%;
-        min-height: 100vh;
         height: auto;
     }
+
+    .habilidades-btn{
+        flex: 1;
+        width: 100%;
+    }
+
     .btn-conteudo{ flex: 0; }
     .btn-conteudo img { width: 38px; }
     .btn-conteudo p { font-size: 10px; }
     
     #conteudoHabilidades{ 
-        flex: 0;
         padding-left: 0; 
-        flex: 40%;
+        flex: 1;
+        font-size: 15px;
+        margin-top: 10%;
     }
 
     #conteudoHabilidades h2{ font-size: 13px; }
@@ -202,6 +210,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         gap: 50px 5vh;
+        padding: 5vh 5%;
     }
 
     .card{ 
@@ -209,6 +218,8 @@
         height: 300px;
         margin: 0 auto;
     }
+
+    .card:first-child{ margin-top: 20%;}
     .card.vazio{ display: none; }
 
     .title-card h2, .title-card p{
