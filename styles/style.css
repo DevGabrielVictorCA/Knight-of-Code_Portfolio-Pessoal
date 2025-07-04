@@ -238,7 +238,7 @@ section{
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    flex: 1;
+    /* flex: 1; */
 }
 
 .btn-conteudo{ 
@@ -360,15 +360,17 @@ section{
     color: rgb(136, 118, 83);
 }
 .card.vazio .text-card{
-    flex: 90%;
+    flex: 100%;
+    font-family: var(--highlighted-font);
+    font-size: 9.7px;
     display: flex;
     flex-flow: column nowrap;
     background-color: transparent;
     justify-content: center;
     align-items: center;
     color: rgb(136, 118, 83);
-    transform: rotate(-45deg);
-    padding: 2px;
+    transform: rotate(-52deg);
+    padding-left: 4px;
 
 }
 .card-flip {
@@ -458,6 +460,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .img-card img{
     width: 80%;

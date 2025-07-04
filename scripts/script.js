@@ -74,17 +74,19 @@ interface.addEventListener('scroll', () => {
 });
 
 // Carrossel de imagens na seção de realizações.
-const imagens = document.querySelectorAll('.imagem');
-let indexAtual = 0;
+document.querySelectorAll('.area-carrossel').forEach(area => {
+  const imagens = area.querySelectorAll('.imagem');
+  let indexAtual = 0;
 
-function mostrarImagem() {
-  imagens.forEach(img => img.classList.remove('visivel')); 
-  imagens[indexAtual].classList.add('visivel');
-  indexAtual = (indexAtual + 1) % imagens.length;
-}
+  function mostrarImagem() {
+    imagens.forEach(img => img.classList.remove('visivel'));
+    imagens[indexAtual].classList.add('visivel');
+    indexAtual = (indexAtual + 1) % imagens.length;
+  }
 
-setInterval(mostrarImagem, 3000); 
-
+  // Inicia o carrossel com intervalo de 3 segundos para cada card
+  setInterval(mostrarImagem, 3000);
+});
 // Exibir informações da linha do tempo.
 let time = document.querySelectorAll('.item');
 let timeContent = document.getElementById('time-content');
@@ -101,3 +103,11 @@ time.forEach(timeBtn => {
         timeContent.innerHTML = timeBtn.querySelector('span').dataset.time; 
     });
 });
+
+// // Ocultar cards vazios no indice 1, 2 e 3.
+// let cardsVazios = document.querySelectorAll('.card.vazio');
+// cardsVazios.forEach((card, index) => {
+//     if (index !== 0) {
+//         card.style.display = 'none';
+//     }
+// })
