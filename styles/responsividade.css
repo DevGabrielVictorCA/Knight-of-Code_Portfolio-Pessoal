@@ -205,7 +205,7 @@
     }
 
     .card{ 
-        width: 216px;
+        width: 214px;
         height: 300px;
         margin: 0 auto;
     }
@@ -218,7 +218,7 @@
 
     .card-front .text-card p{ font-size: 15px;}
     .card-back .text-card p, .links-view a{ font-size: 11px; }
-    .img-card img{ height: 130px}
+    .img-card img, .area-carrossel{ height: 130px}
     .tags img{ width: 32px; }
 
     .links-view a ion-icon{
