@@ -207,8 +207,32 @@
         height: auto;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        padding: 5%;
+        gap: 50px 5vh;
     }
 
+    .card{ 
+        width: 216px;
+        height: 300px;
+        /* margin: 0 auto; */
+    }
     .card.vazio{ display: none; }
+
+    .title-card h2, .title-card p{
+        font-size: 11px;
+        line-height: 15px;
+        text-align: center;
+    }
+
+    .card-front .text-card p{ font-size: 15px;}
+    .card-back .text-card p, .links-view a{ font-size: 12px; }
+    .img-card img{
+        height: 130px;
+    }
+
+    .tags img{ width: 32px; }
+
+    .links-view a ion-icon{
+        font-size: 23px;
+        transform: translateY(5px);
+    }
 }

@@ -353,7 +353,6 @@ section{
     flex: 70%;
 }
 
-
 .card.vazio .title-card h2,
 .card.vazio .title-card p{
     background-color: transparent;
@@ -434,6 +433,7 @@ section{
 }
 
 .title-card h2{
+    flex: 80%;
     position: relative;
     font-size: 9px;
     padding: 5px;
@@ -444,14 +444,15 @@ section{
 }
 
 .title-card p{
+    flex: 20%;
     position: relative;
     display: block;
     background-color: var(--primary-color);
     font-size: 10px;
     color: #ffffff;
     border-radius: 30px;
-    padding: 9px;
-    transform: translateX(5px);
+    padding: 9px 7px;
+    transform: translateX(3px);
     z-index: 100;
     right: 0;
 }
@@ -501,11 +502,11 @@ section{
     padding: 3%;
 }
 
-.imagem img:hover{
-    transform: scale(1.);
+/* .imagem img:hover{
+    transform: scale(1.1);
     object-fit: cover;
     transition: all .3s ease-in-out;
-}
+} */
 
 .imagem.visivel {
     opacity: 1;
