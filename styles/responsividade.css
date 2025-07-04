@@ -84,13 +84,14 @@
        .links-sociais-menu{
         display: flex;
         justify-content: flex-end;
+        align-items: self-end;
         text-decoration: none;
-        padding: 2px;
-        padding-right: 10%;
+        padding: 7px 2px;
         gap: 5px;
         cursor: pointer;
-        padding-right: 5%;   
+        margin-top: 160%;
     }
+    
     .links-sociais-menu ion-icon{
         font-size: 43px;
         padding: 10px;
@@ -131,13 +132,18 @@
         text-align: justify; 
     }
 
-    .voltar-topo{ right: 10px; }
+    .voltar-topo{ 
+        right: 10px; 
+        font-size: 48px;
+    }
+
+    .topoInativo{ display: none; }
 
     /* Seção das Habilidades, Seção das Realizações e Seção do Diário*/
     .section-habilidades, .section-realizacoes, .section-diario{
         padding-left: 5%;
         height: auto;
-        min-height: 100vh;
+        /* min-height: 100vh; */
     }
 
     .section-realizacoes{ padding-top: 5%;}
@@ -146,6 +152,10 @@
 @media screen and (max-width: 630px){
     .container-logo { padding-bottom: 0;}
     .abrir-menu{ font-size: 10vw; }
+
+    .section{
+        height: auto;
+    }
 
     /* Seção do Aventureiro */
     .section-aventureiro{
@@ -182,7 +192,7 @@
         display: flex;
         flex-direction: column-reverse; 
         padding: 5vh 5%;
-        height: auto;
+        /* height: auto; */
     }
 
     .habilidades-btn{
@@ -207,7 +217,7 @@
     /* Seção das Realizações */
 
     .section-realizacoes{
-        height: auto;
+        /* height: auto; */
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         gap: 50px 5vh;
@@ -240,8 +250,8 @@
 
     /* Seção do Diário */
     .section-diario{
-        height: auto;
-        min-height: 100vh;
+        /* height: auto; */
+        /* min-height: 100vh; */
         padding-top: 17%;
     }
 
@@ -250,7 +260,7 @@
     }
 
     #time-title, #time-content p, #time-content div p{ font-size: 15px; }
-    #time-content h2{ font-size: 10.5px; }
+    #time-content h2{ font-size: 11px; }
     #time-content h3{ font-size: 15px; }
 
 }

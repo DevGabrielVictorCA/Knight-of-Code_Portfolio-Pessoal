@@ -1,9 +1,11 @@
 // Abrir e fechar menu hamburger.
 let abrirMenu = document.querySelector('.abrir-menu');
 let navItems = document.querySelector('.nav-items');
+let voltarTopo = document.querySelector('.voltar-topo');
 
 abrirMenu.addEventListener('click', ()=>{
     navItems.classList.toggle('active');
+    voltarTopo.classList.toggle('topoInativo');
 })
 
 // Itens ativos no menu

@@ -306,6 +306,7 @@ section{
     color: var(--secundary-color);
     transition: all .3s ease-in-out;
     pointer-events: none;
+    z-index: 9999;
 }
 
 .voltar-topo.ativo{
