@@ -199,6 +199,7 @@
         flex: 1;
         font-size: 15px;
         margin-top: 10%;
+        padding-top: 25px;
     }
 
     #conteudoHabilidades h2{ font-size: 13px; }
@@ -236,5 +237,21 @@
         font-size: 23px;
         transform: translateY(7px);
     }
+
+    /* Seção do Diário */
+    .section-diario{
+        height: auto;
+        min-height: 100vh;
+        padding-top: 17%;
+    }
+
+    .timeline{
+        padding: 100px 0;
+    }
+
+    #time-title, #time-content p, #time-content div p{ font-size: 15px; }
+    #time-content h2{ font-size: 10.5px; }
+    #time-content h3{ font-size: 15px; }
+
 }
 /* style: correção no font-size dos textos dos card na seção de habilidades */

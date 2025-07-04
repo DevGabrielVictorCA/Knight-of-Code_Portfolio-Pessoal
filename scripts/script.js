@@ -28,13 +28,6 @@ btnConteudo.forEach(btn => {
     })
 })
 
-// Recalcula a posição da página ao adicionar ou remover as abas de habilidades.
-const sectionHabilidades = document.getElementById("habilidades");
-const observer = new MutationObserver(() => {
-    sectionHabilidades.scrollIntoView({ behavior: "smooth", block: "start" });
-});
-observer.observe(conteudoHabilidades, { childList: true, subtree: true });
-
 // Botão voltar ao topo da página.
 const interface = document.querySelector('.interface');
 const sectionAventureiro = document.querySelector('#aventureiro');
@@ -87,6 +80,7 @@ document.querySelectorAll('.area-carrossel').forEach(area => {
   // Inicia o carrossel com intervalo de 3 segundos para cada card
   setInterval(mostrarImagem, 3000);
 });
+
 // Exibir informações da linha do tempo.
 let time = document.querySelectorAll('.item');
 let timeContent = document.getElementById('time-content');
