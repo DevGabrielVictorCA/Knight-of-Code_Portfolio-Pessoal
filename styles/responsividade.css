@@ -217,7 +217,7 @@
     }
 
     .card-front .text-card p{ font-size: 15px;}
-    .card-back .text-card p, .links-view a{ font-size: 13px; }
+    .card-back .text-card p, .links-view a{ font-size: 11px; }
     .img-card img{ height: 130px}
     .tags img{ width: 32px; }
 
@@ -226,3 +226,4 @@
         transform: translateY(5px);
     }
 }
+/* style: correção no font-size dos textos dos card na seção de habilidades */
