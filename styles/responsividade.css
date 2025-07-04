@@ -223,7 +223,7 @@
 
     .links-view a ion-icon{
         font-size: 23px;
-        transform: translateY(5px);
+        transform: translateY(7px);
     }
 }
 /* style: correção no font-size dos textos dos card na seção de habilidades */
