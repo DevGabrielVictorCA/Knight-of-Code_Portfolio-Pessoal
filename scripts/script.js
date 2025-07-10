@@ -3,11 +3,19 @@ let abrirMenu = document.querySelector('.abrir-menu');
 let navItems = document.querySelector('.nav-items');
 let voltarTopo = document.querySelector('.voltar-topo');
 
-abrirMenu.addEventListener('click', ()=>{
-    navItems.classList.toggle('active');
-    voltarTopo.classList.toggle('topoInativo');
-})
+abrirMenu.addEventListener('click', () => {
+  navItems.classList.toggle('active');
 
+  if (navItems.classList.contains('active')) {
+    voltarTopo.classList.add('topoInativo');
+  } 
+
+  else {
+    setTimeout(() => {
+      voltarTopo.classList.remove('topoInativo');
+    }, 1000);
+  }
+});
 // Itens ativos no menu
 const navLinks = document.querySelectorAll(".nav-link");
 navLinks.forEach(link => {
@@ -99,11 +107,3 @@ time.forEach(timeBtn => {
         timeContent.innerHTML = timeBtn.querySelector('span').dataset.time; 
     });
 });
-
-// // Ocultar cards vazios no indice 1, 2 e 3.
-// let cardsVazios = document.querySelectorAll('.card.vazio');
-// cardsVazios.forEach((card, index) => {
-//     if (index !== 0) {
-//         card.style.display = 'none';
-//     }
-// })
