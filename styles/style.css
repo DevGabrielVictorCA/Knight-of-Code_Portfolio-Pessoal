@@ -225,9 +225,7 @@ section{
     padding-left: 30px;
 }
 
-#texto-perfil p{
-    padding: 0 20px;
-}
+#texto-perfil p{ padding: 0 20px; }
 
 /* ---------------------------- Seção das Habilidades ---------------------------- */
 .section-habilidades{

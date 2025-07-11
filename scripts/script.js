@@ -4,18 +4,10 @@ let navItems = document.querySelector('.nav-items');
 let voltarTopo = document.querySelector('.voltar-topo');
 
 abrirMenu.addEventListener('click', () => {
-  navItems.classList.toggle('active');
-
-  if (navItems.classList.contains('active')) {
-    voltarTopo.classList.add('topoInativo');
-  } 
-
-  else {
-    setTimeout(() => {
-      voltarTopo.classList.remove('topoInativo');
-    }, 1000);
-  }
+    navItems.classList.toggle('active');
+    voltarTopo.classList.toggle('topoInativo');
 });
+
 // Itens ativos no menu
 const navLinks = document.querySelectorAll(".nav-link");
 navLinks.forEach(link => {
@@ -26,17 +18,41 @@ navLinks.forEach(link => {
 })
 
 // Mostrar e esconder descrição das habilidades.
-let btnConteudo = document.querySelectorAll('.btn-conteudo');
-let conteudoHabilidades = document.getElementById('conteudoHabilidades');
+const botoes = document.querySelectorAll('.btn-conteudo');
+const conteudo = document.getElementById('conteudoHabilidades');
+const textoPadrao = '/* Toque sobre um ícone para ver a sua descrição. */';
 
-btnConteudo.forEach(btn => {
-    btn.addEventListener('mouseover', ()=>{
-        conteudoHabilidades.innerHTML = btn.dataset.conteudo;
-    })
-    btn.addEventListener('mouseout', ()=>{
-        conteudoHabilidades.innerHTML = ' /* Passe o mouse sobre um ícone para ver a sua descrição. */';
-    })
-})
+let ativo = null;
+
+// Detecta se é um dispositivo com toque
+const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+botoes.forEach(btn => {
+    const texto = btn.dataset.conteudo;
+
+    if (!isTouch) {
+        // Desktop
+        btn.addEventListener('mouseenter', () => conteudo.innerHTML = texto);
+        btn.addEventListener('mouseleave', () => conteudo.innerHTML = textoPadrao);
+    } else {
+        // Mobile
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            conteudo.innerHTML = texto;
+            ativo = btn;
+        });
+    }
+});
+
+// Clique fora das habilidades, apenas no mobile
+if (isTouch) {
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.btn-conteudo')) {
+            conteudo.innerHTML = textoPadrao;
+            ativo = null;
+        }
+    });
+}
 
 // Botão voltar ao topo da página.
 const interface = document.querySelector('.interface');

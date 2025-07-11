@@ -11,7 +11,7 @@
 }
 
 @media screen and (max-width: 1020px) {
-    /* *{ scroll-padding: 30px;} */
+    *{ scroll-padding: 20px;}
 
     .interface{ flex-direction: column; }
 
@@ -170,14 +170,15 @@
     .section-aventureiro{
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        padding-top: 17%;
+        padding-top: 30%;
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-direction: column;
     }
 
     .img-perfil img { height: 30vh; }
-    .status-perfil{ padding-left: 0; padding: 15px;}
+    .status-perfil{ padding-left: 0; padding: 0px;}
     
     .status-perfil h1{ 
         font-size: 14px; 
@@ -194,7 +195,12 @@
     .status-perfil h3 span, #texto-perfil { 
         font-size: 17px; 
         line-height: 20px; 
+        text-align: left;
+        padding-left: 0;
     }
+
+    #texto-perfil p{ padding: 15px 0; }
+
 
     /* Seção das Habilidades */
     .section-habilidades{ 
@@ -270,11 +276,38 @@
     }
 
     /* Seção do Diário */
-    .section-diario{ padding-top: 17%; }
-    .timeline{ padding: 100px 0; }
-    #time-title, #time-content p, #time-content div p{ font-size: 15px; }
-    #time-content h2{ font-size: 11px; }
-    #time-content h3{ font-size: 15px; }
+    .section-diario{ padding-top: 17%; height: auto; }
 
+    #time-title{ padding-left: 0; text-align: left; }
+    .timeline{ padding: 85px 0; }
+    .line{ height: 2px; }
+
+    .line-items li{ 
+        width: 37px;
+        height: 37px;
+    }
+
+    .top::after { top: 15px; }
+    .bottom::after { top: -30px; }
+
+    .top { top: -50px; }
+    .bottom { top: 50px; }
+
+    .line-items li span{ font-size: 8; 
+        text-align: left;
+}
+
+    #time-title, #time-content p, #time-content div p{ font-size: 16px; }
+    #time-content div { padding-top: 5px;}
+    #time-content h2{ font-size: 11.5px; }
+    
+    #time-content h3{ 
+        font-size: 16px; 
+        padding: 19px;
+    }
+
+    #time-content{
+        padding-bottom: 25px;
+    }
 }
 /* style: correção no font-size dos textos dos card na seção de habilidades */
