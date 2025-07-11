@@ -6,7 +6,16 @@ let voltarTopo = document.querySelector('.voltar-topo');
 abrirMenu.addEventListener('click', () => {
     navItems.classList.toggle('active');
     voltarTopo.classList.toggle('topoInativo');
+
+      event.stopPropagation();
 });
+
+document.addEventListener('click', (event) => {
+    if (!event.target.closest('.nav-items') && !event.target.closest('.abrir-menu')){
+            navItems.classList.remove('active');
+            voltarTopo.classList.remove('topoInativo');
+    }
+})
 
 // Itens ativos no menu
 const navLinks = document.querySelectorAll(".nav-link");

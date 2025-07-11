@@ -353,6 +353,7 @@ section{
 }
 
 .card.vazio .title-card h2{ 
+    font-size: 9px;
     text-align: center;
     flex: 70%;
 }
@@ -365,7 +366,7 @@ section{
 .card.vazio .text-card{
     flex: 100%;
     font-family: var(--highlighted-font);
-    font-size: 9.7px;
+    font-size: 8px;
     display: flex;
     flex-flow: column nowrap;
     background-color: transparent;
@@ -379,7 +380,8 @@ section{
 
 .card.vazio .card-back .text-card{ 
     transform: rotate(0); 
-    font-size: 8px;
+    font-size: 6px;
+    transform: translateY(-10px);
 }
 
 .card-flip {
@@ -399,14 +401,15 @@ section{
 .card:hover{ 
     z-index: 100;
     will-change: transform;
+    cursor: pointer;
 }
 
-.card:hover.card-topL{ transform: translate(235px, 120px); }
-.card:hover.card-topC{ transform: translate(0, 120px);}
-.card:hover.card-topR{ transform: translate(-235px, 140px); }
-.card:hover.card-downL{ transform: translate(235px, -140px); }
-.card:hover.card-downC{ transform: translate(0, -140px); }
-.card:hover.card-downR{ transform: translate(-235px, -140px); }
+.card:hover.card-topL{ transform: translate(235px, 135px); }
+.card:hover.card-topC{ transform: translate(0, 135px);}
+.card:hover.card-topR{ transform: translate(-235px, 135px); }
+.card:hover.card-downL{ transform: translate(235px, -145px); }
+.card:hover.card-downC{ transform: translate(0, -145px); }
+.card:hover.card-downR{ transform: translate(-235px, -145px); }
 
 .card-front,
 .card-back {
@@ -571,6 +574,7 @@ section{
     color: var(--secundary-color);
     transition: all .3s ease-in-out;
     padding: 5px 0 10px;
+    font-weight: 500;
 }
 
 .links-view a:hover{ 
@@ -581,7 +585,7 @@ section{
 .links-view a ion-icon{ 
     font-size: 16px; 
     padding-right: 5px;
-    transform: translateY(3px);
+    transform: translateY(5px);
 }
 
 /* ---------------------------- Seção do Diário ---------------------------- */
@@ -638,8 +642,8 @@ section{
 .line-items li{
     position: relative;
     background-color: var(--primary-color);
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
 }
 
@@ -666,8 +670,8 @@ section{
 
 .top, .bottom{ position: relative; }
 
-.top { top: -65px; }
-.bottom { top: 65px; }
+.top { top: -63px; }
+.bottom { top: 63px; }
 
 .top::after,
 .bottom::after {
@@ -685,7 +689,7 @@ section{
 
 #time-content{
     flex: 50%;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 #time-content h2{
     color: var(--primary-color);

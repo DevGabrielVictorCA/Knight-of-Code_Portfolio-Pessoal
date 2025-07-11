@@ -1,17 +1,10 @@
-:root {
-    --primary-color: #9e4301;
-    --secundary-color: #331805;
-    --highlighted-font: "Press Start 2P", system-ui;
-    --main-font: "Raleway", sans-serif;
-}
-
 /* Responsividade */
 @media screen and (max-width: 1190px){
     #time-title{ padding-left: 70px;}
 }
 
 @media screen and (max-width: 1020px) {
-    *{ scroll-padding: 20px;}
+    /* *{ scroll-padding: 20px;} */
 
     .interface{ flex-direction: column; }
 
@@ -246,7 +239,7 @@
         margin: 0 auto;
     }
 
-    .card:first-child{ margin-top: 20%;}
+    /* .card:first-child{ margin-top: 20%;} */
     .card.vazio{ display: none; }
 
     .title-card h2, .title-card p{
@@ -255,10 +248,10 @@
     }
 
     .card-front .text-card p{ font-size: 15px;}
-    .card-back .text-card p, .links-view a{ font-size: 10px; }
+    .card-back .text-card p{ font-size: 10px; }
     .img-card img, .area-carrossel{ height: 130px}
     .tags img{ width: 32px; }
-
+    .links-view a { font-size: 12px;}
     .links-view a ion-icon{
         font-size: 23px;
         transform: translateY(7px);
@@ -290,12 +283,13 @@
     .top::after { top: 15px; }
     .bottom::after { top: -30px; }
 
-    .top { top: -50px; }
-    .bottom { top: 50px; }
+    .top { top: -44px; }
+    .bottom { top: 49px; }
 
-    .line-items li span{ font-size: 8; 
-        text-align: left;
-}
+    .line-items li span{ 
+        font-size: 7.2px; 
+        padding: 0 1px;
+    }
 
     #time-title, #time-content p, #time-content div p{ font-size: 16px; }
     #time-content div { padding-top: 5px;}
