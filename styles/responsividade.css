@@ -39,7 +39,7 @@
         justify-content: end;
         width: 100%;
     }
-    .abrir-menu{ display: flex;}
+    .abrir-menu{ display: block;}
 
     .nav-items{
         opacity: 0;
@@ -61,6 +61,8 @@
         opacity: 1;
         clip-path: circle(1500px at 90% -15%);
     }
+
+    .nav-items li:first-of-type{ padding: 50px 50px 10px; }
     .nav-items li{ padding: 10px 50px; }
 
     .nav-items li a{

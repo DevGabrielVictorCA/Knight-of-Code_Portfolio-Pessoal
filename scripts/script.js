@@ -4,6 +4,7 @@ let navItems = document.querySelector('.nav-items');
 let voltarTopo = document.querySelector('.voltar-topo');
 
 abrirMenu.addEventListener('click', () => {
+    abrirMenu.classList.toggle('open');
     navItems.classList.toggle('active');
     voltarTopo.classList.toggle('topoInativo');
 
@@ -12,6 +13,7 @@ abrirMenu.addEventListener('click', () => {
 
 document.addEventListener('click', (event) => {
     if (!event.target.closest('.nav-items') && !event.target.closest('.abrir-menu')){
+            abrirMenu.classList.toggle('open');
             navItems.classList.remove('active');
             voltarTopo.classList.remove('topoInativo');
     }

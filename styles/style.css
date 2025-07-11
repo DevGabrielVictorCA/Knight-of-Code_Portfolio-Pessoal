@@ -138,18 +138,52 @@ header::before,
 
 .abrir-menu{
     display: none;
-    justify-content: center;
-    align-items: center;
-    color: var(--secundary-color); 
-    font-size: 5vw;
-    padding-right: 10%;
-    transition: all .3s ease-in-out;
-}
-.abrir-menu:hover{
-    color: var(--primary-color);
-    transform: scale(110%);
+    width: 35px;
+    height: 20px;
+    position: relative;
+    margin:  auto;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    z-index: 1000;
 }
 
+.abrir-menu span{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    opacity: 1;
+    left: 45%;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.abrir-menu span:nth-child(1){ top: 0px; }
+
+.abrir-menu span:nth-child(2),
+.abrir-menu span:nth-child(3){ top: 10px; }
+
+.abrir-menu span:nth-child(4){ top: 20px; }
+
+.abrir-menu.open span:nth-child(1){
+    top: 11px;
+    width: 0%;
+    left: 50%;
+}
+
+.abrir-menu.open span:nth-child(2){ transform: rotate(45deg) ;}
+.abrir-menu.open span:nth-child(3){ transform: rotate(-45deg) ;}
+
+.abrir-menu.open span:nth-child(4){
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+.abrir-menu:hover{ transform: scale(110%); }
+ 
 /* Animação */
 @keyframes animar-pagina { 50% { transform: translateX(-100vw); } }
 
