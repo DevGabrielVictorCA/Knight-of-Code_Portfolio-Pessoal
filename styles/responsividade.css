@@ -200,7 +200,6 @@
         display: flex;
         flex-direction: column-reverse; 
         padding: 5vh 5%;
-        /* height: auto; */
     }
 
     .habilidades-btn{
@@ -218,15 +217,12 @@
         flex: 1;
         font-size: 16px;
         margin-top: 5%;
-        padding-top: 25px;
     }
 
     #conteudoHabilidades h2{ font-size: 13px; }
 
     /* Seção das Realizações */
-
     .section-realizacoes{
-        /* height: auto; */
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         gap: 50px 5vh;
@@ -239,7 +235,6 @@
         margin: 0 auto;
     }
 
-    /* .card:first-child{ margin-top: 20%;} */
     .card.vazio{ display: none; }
 
     .title-card h2, .title-card p{
