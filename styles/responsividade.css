@@ -217,7 +217,7 @@
         padding-left: 0; 
         flex: 1;
         font-size: 16px;
-        margin-top: 10%;
+        margin-top: 5%;
         padding-top: 25px;
     }
 
@@ -276,19 +276,19 @@
     .line{ height: 2px; }
 
     .line-items li{ 
-        width: 37px;
-        height: 37px;
+        width: 39px;
+        height: 39px;
     }
 
-    .top::after { top: 15px; }
+    .top::after { top: 14px; }
     .bottom::after { top: -30px; }
 
     .top { top: -44px; }
     .bottom { top: 49px; }
 
     .line-items li span{ 
-        font-size: 7.2px; 
-        padding: 0 1px;
+        font-size: 8.5px; 
+        /* padding: 0 1px; */
     }
 
     #time-title, #time-content p, #time-content div p{ font-size: 16px; }
