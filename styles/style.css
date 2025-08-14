@@ -168,7 +168,7 @@ header::before,
 .abrir-menu span:nth-child(4){ top: 20px; }
 
 .abrir-menu.open span:nth-child(1){
-    top: 11px;
+    top: 18px;
     width: 0%;
     left: 50%;
 }
