@@ -1,3 +1,10 @@
+## ⚠️ Aviso
+Este repositório contém uma versão descontinuada do meu portfólio.
+
+👉 Veja a versão mais recente:
+- 🔗 Repositório: [https://github.com/DevGabrielVictorCA/Portfolio-Gabriel-Cardoso-V2]
+- 🌐 Site: [https://portfolio-gabriel-cardoso-nu.vercel.app/] 
+
 # ⚔️ Knight of Code - Portfólio Pessoal
 
 **Desenvolvedor:** Gabriel Cardoso  
